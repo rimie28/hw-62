@@ -1,11 +1,12 @@
-import { NavLink } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Components/Home.tsx';
 
 function App() {
 
   return (
-    <div>
-      <nav className="p-3 navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#e3f2fd'}}>
+    <div style={{width: '100%', height: '100%'}}>
+      <nav className="p-3 m-0 navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
@@ -41,6 +42,15 @@ function App() {
             </ul>
           </div>
       </nav>
+
+      <div style={{width: '100%', height: '100%'}}>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/aboutus"/>
+          <Route path="/contacts"/>
+        </Routes>
+      </div>
+
     </div>
   )
 }
