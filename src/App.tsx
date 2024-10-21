@@ -1,6 +1,7 @@
 import { Routes, Route, NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home.tsx';
+import AboutUs from './Components/AboutUs.tsx';
 
 function App() {
 
@@ -46,7 +47,7 @@ function App() {
       <div style={{width: '100%', height: '100%'}}>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/aboutus"/>
+          <Route path="/aboutus" element={<AboutUs/>}/>
           <Route path="/contacts"/>
         </Routes>
       </div>

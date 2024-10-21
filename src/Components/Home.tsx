@@ -1,7 +1,4 @@
-import * as React from 'react';
-
-
-const Home:React.FC = () => {
+const Home = () => {
   return (
     <div className="Home d-flex justify-content-center align-items-center text-white"
     style={{backgroundImage: `url('/public/img/film-studio.webp')`, width: '100%', height: '100%'}}>
