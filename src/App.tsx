@@ -2,6 +2,7 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home.tsx';
 import AboutUs from './Components/AboutUs.tsx';
+import Contacts from './Components/Contacts.tsx';
 
 function App() {
 
@@ -48,7 +49,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/aboutus" element={<AboutUs/>}/>
-          <Route path="/contacts"/>
+          <Route path="/contacts" element={<Contacts/>}/>
         </Routes>
       </div>
 
